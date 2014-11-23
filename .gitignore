@@ -36,3 +36,4 @@ build/
 
 /vendor/bundle
 /.env
+*.swp
