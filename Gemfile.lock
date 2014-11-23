@@ -1,5 +1,6 @@
-PATH
-  remote: /Users/nownabe/projects/ruboty-twitter
+GIT
+  remote: git://github.com/nownabe/ruboty-twitter.git
+  revision: cb9ff30e180e4ed7f8dd3b5544091cd3c6a9fff7
   specs:
     ruboty-twitter (0.0.4)
       activesupport
