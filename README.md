@@ -41,6 +41,14 @@ YoutubeのURLとか登録してください。
 
 ## おまけ機能
 
+### 画像検索
+
+```
+@masabot_ image <検索ワード>
+```
+
+### メタル
+
 ```
 @masabot_ metal
 ```
