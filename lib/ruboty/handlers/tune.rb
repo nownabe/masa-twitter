@@ -15,6 +15,12 @@ module Ruboty
         description: "Recommend a tune with given tag."
       )
 
+      on(
+        /今日のメタル\z/,
+        name: "todays_metal",
+        description: "Recommend Today's metal tune."
+      )
+
       def add(message)
         url = message[:url]
         tags = message[:tags].split(/,/).map(&:downcase)
@@ -26,6 +32,11 @@ module Ruboty
         tag = message[:tag].downcase
         url = table[tag].try(:sample) || "Nothing"
         message.reply(url)
+      end
+
+      def todays_metal(message)
+        url = table["メタル"].try(:sample) || "Nothing"
+        message.reply("Your Today's METAL is #{url}")
       end
 
       private
